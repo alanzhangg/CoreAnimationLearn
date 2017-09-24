@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreAnimationLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VpI-gf-M19"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fi1-ma-cb4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xD0-5u-Ko6">
+                                <rect key="frame" x="67" y="140" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="dNy-fb-RcO"/>
+                                    <constraint firstAttribute="height" constant="128" id="ozZ-5t-GdQ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leL-yX-8JW">
+                                <rect key="frame" x="136" y="288" width="102" height="30"/>
+                                <state key="normal" title="BaseAnimation"/>
+                                <connections>
+                                    <action selector="animation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZjQ-cq-g7C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxz-Wx-KDw">
+                                <rect key="frame" x="118.5" y="328" width="137" height="30"/>
+                                <state key="normal" title="KeyFrameAnimation"/>
+                                <connections>
+                                    <action selector="keyframeAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEo-9F-KY7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftp-f9-F6V">
+                                <rect key="frame" x="131.5" y="368" width="111" height="30"/>
+                                <state key="normal" title="AnimationGroup"/>
+                                <connections>
+                                    <action selector="animationGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3X6-gF-kBB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xD0-5u-Ko6" firstAttribute="top" secondItem="VpI-gf-M19" secondAttribute="bottom" constant="120" id="5Ni-KS-NQe"/>
+                            <constraint firstItem="Mxz-Wx-KDw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bde-QV-3u3"/>
+                            <constraint firstItem="xD0-5u-Ko6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PYW-Yi-0eG"/>
+                            <constraint firstItem="ftp-f9-F6V" firstAttribute="top" secondItem="Mxz-Wx-KDw" secondAttribute="bottom" constant="10" id="SlG-c8-BRP"/>
+                            <constraint firstItem="leL-yX-8JW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XHx-qX-u4w"/>
+                            <constraint firstItem="Mxz-Wx-KDw" firstAttribute="top" secondItem="leL-yX-8JW" secondAttribute="bottom" constant="10" id="jQw-9z-JaJ"/>
+                            <constraint firstItem="leL-yX-8JW" firstAttribute="top" secondItem="xD0-5u-Ko6" secondAttribute="bottom" constant="20" id="kbj-Ct-YW8"/>
+                            <constraint firstItem="ftp-f9-F6V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x2q-Sx-1Rc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="xD0-5u-Ko6" id="O06-Lf-mwL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
