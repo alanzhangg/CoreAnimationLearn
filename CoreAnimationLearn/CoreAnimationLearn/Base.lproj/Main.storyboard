@@ -50,17 +50,62 @@
                                     <action selector="animationGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3X6-gF-kBB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-ol-QeS">
+                                <rect key="frame" x="117.5" y="408" width="139" height="30"/>
+                                <state key="normal" title="ViewLayerAnimation"/>
+                                <connections>
+                                    <action selector="viewLayerCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wC6-Wd-AUi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-d0-5jb">
+                                <rect key="frame" x="120.5" y="448" width="133" height="30"/>
+                                <state key="normal" title="transitionAnimation"/>
+                                <connections>
+                                    <action selector="viewTransitionAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ge5-lL-S1w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lR-JE-5v8">
+                                <rect key="frame" x="85.5" y="488" width="84" height="30"/>
+                                <state key="normal" title="PauseAnima"/>
+                                <connections>
+                                    <action selector="pauseAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9b-ix-cQ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcV-iw-WS1">
+                                <rect key="frame" x="198.5" y="488" width="98" height="30"/>
+                                <state key="normal" title="ResumeAnima"/>
+                                <connections>
+                                    <action selector="resumeAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sds-48-ZvK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wZ-CJ-IBS">
+                                <rect key="frame" x="71" y="528" width="113" height="30"/>
+                                <state key="normal" title="TransformAnima"/>
+                                <connections>
+                                    <action selector="transformAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZg-vJ-Vdw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2fv-d0-5jb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0fS-IK-LOM"/>
                             <constraint firstItem="xD0-5u-Ko6" firstAttribute="top" secondItem="VpI-gf-M19" secondAttribute="bottom" constant="120" id="5Ni-KS-NQe"/>
+                            <constraint firstItem="2fv-d0-5jb" firstAttribute="top" secondItem="Pat-ol-QeS" secondAttribute="bottom" constant="10" id="60p-ig-Kz0"/>
                             <constraint firstItem="Mxz-Wx-KDw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bde-QV-3u3"/>
                             <constraint firstItem="xD0-5u-Ko6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PYW-Yi-0eG"/>
                             <constraint firstItem="ftp-f9-F6V" firstAttribute="top" secondItem="Mxz-Wx-KDw" secondAttribute="bottom" constant="10" id="SlG-c8-BRP"/>
+                            <constraint firstItem="4wZ-CJ-IBS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="UcX-2x-z9B"/>
+                            <constraint firstItem="Pat-ol-QeS" firstAttribute="top" secondItem="ftp-f9-F6V" secondAttribute="bottom" constant="10" id="VUR-pT-Lxv"/>
                             <constraint firstItem="leL-yX-8JW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XHx-qX-u4w"/>
+                            <constraint firstItem="Pat-ol-QeS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hgv-m6-k1U"/>
+                            <constraint firstItem="jcV-iw-WS1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="ilj-EV-Phh"/>
+                            <constraint firstItem="9lR-JE-5v8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="ixc-0i-VNh"/>
                             <constraint firstItem="Mxz-Wx-KDw" firstAttribute="top" secondItem="leL-yX-8JW" secondAttribute="bottom" constant="10" id="jQw-9z-JaJ"/>
                             <constraint firstItem="leL-yX-8JW" firstAttribute="top" secondItem="xD0-5u-Ko6" secondAttribute="bottom" constant="20" id="kbj-Ct-YW8"/>
+                            <constraint firstItem="jcV-iw-WS1" firstAttribute="top" secondItem="2fv-d0-5jb" secondAttribute="bottom" constant="10" id="qFd-HT-TJp"/>
                             <constraint firstItem="ftp-f9-F6V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x2q-Sx-1Rc"/>
+                            <constraint firstItem="9lR-JE-5v8" firstAttribute="top" secondItem="2fv-d0-5jb" secondAttribute="bottom" constant="10" id="xq3-Wj-lJU"/>
+                            <constraint firstItem="4wZ-CJ-IBS" firstAttribute="top" secondItem="9lR-JE-5v8" secondAttribute="bottom" constant="10" id="y4t-MG-oFx"/>
                         </constraints>
                     </view>
                     <connections>
